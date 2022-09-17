@@ -1,0 +1,762 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+::selection{
+    background-color: #225a9f;
+    color: #fff;
+}
+
+
+/* ****************************header******************* */
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.header-top{
+    width: 100%;
+    height: 68px;
+    background-color: #2471a4;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 25px;
+}
+
+.header-top ul{
+    display: flex;
+    padding-left: 95px;
+}
+
+.header-top ul > li{
+    padding-left: 13px ;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+.header-top ul > li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.English{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.menu{
+    position: relative;
+}
+
+.submenu{
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu .submenu{
+    display: none;
+    background-color:#2471a4;
+    width: 210px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.menu:hover .submenu {
+    display: block;
+}
+
+.search{
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+
+:focus{
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    opacity: .7;
+    transition: 1s ease-in-out;
+}
+
+:focus::-webkit-input-placeholder{
+    background-color: #312d38;
+    width: 100%;
+}
+
+.search input{
+    height: 38px;
+    width: 200px;
+    border: none;
+    background-color: #2471a4;
+    font-size: 18px;
+    color: #fff;
+}
+
+.search button{
+    height: 28px;
+    width: 30px;
+    border: none;
+    background-color: #2471a4;
+    color: #fff;
+}
+
+.header-bottom{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.header-bottom ul {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-bottom ul li {
+    margin-left: 39px ;
+}
+
+.header-bottom ul li a{
+    text-decoration: none;
+    color: #312d38;
+    font-size: 15px;
+}
+
+.header-bottom__p{
+    font-size: 11px;
+    color: #727272;
+}
+
+.activ{
+    padding: 8px 15px;
+    border-radius: 3px;
+    background-color: #63c1ec;
+    color: #fff;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.img-loco{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+/* ****************************header-end*********************************** */
+
+
+/* **************************Section Header-start*************************** */
+
+.header__section {
+    width: 100%;
+    min-height: 755px;
+    background-color: #7a7676;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-image: url('image/back1.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 200px;
+}
+.header__section::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+}
+
+.header__section_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: flex 1s ease-out;
+}
+.header__section_content h1, .header__section_content h2 {
+  margin: 1rem;
+  font-family: 'Droid Arabic Kufi', serif ;
+}
+.header__section_content h1 {
+    font-size: 40px;
+}
+.header__section_content a {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-family: 'Droid Arabic Kufi', serif ;
+    background-color: #4aafda;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+.header__section_content a:hover {
+    background-color: #5a5757;
+}
+.header__section_right, .header__section_left {
+ position: absolute;
+ top: 50%;
+ background-color: rgba(0,0,0,0.4);
+ padding: 20px;
+ border-radius: 50%;
+ display: none;
+ cursor: pointer;
+
+}
+.header__section:hover .header__section_right,.header__section:hover .header__section_left {
+    display: block;
+}
+.header__section_left {
+left: 40px;
+
+}
+.header__section_right {
+right: 40px;
+
+}
+.header__section_left:hover,.header__section_right:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 1s ease-in;
+
+}
+
+.background__images {
+    display: none;
+}
+/* **************************Section Header-end*************************** */
+
+
+/* *********************A section about the college-start****************** */
+.about-the-college{
+    margin: 50px 20px;
+}
+
+.about-the-college__article1--title h3{
+    text-align: center;
+    font-size: 23px;
+    color: #474747;
+}
+
+.about-the-college__article1--title--p-color{
+    color: #7c7c7cce;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 14px;
+    position: relative;
+}
+
+.about-the-college__article1--title--p-color::after{
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #474747;
+    position: absolute;
+    top:60px;
+    right: 48.5%;
+}
+
+.about-the-college__article1-img-p{
+    display: flex;
+    margin: 8em 0;
+    
+}
+
+.about-the-college__p--title--big{
+    font-size: 1.5em;
+    margin-bottom: 14px;
+    color: #474747;
+    margin-right: 10px;
+}
+
+.about-the-college__p--text{
+    margin: 0 15px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about-the-college--a{
+    background-color:#63c1ec ;
+    padding: 5px 23px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 83%;
+}
+
+.about-the-college__article2{
+    display: flex;
+}
+
+.about-the-college__article2--title--h3{
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.about-the-college__article2--p--text{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about-the-college__article2--h4-color{
+    color: #63c1ec;
+}
+
+.about-the-college__article2--footer{
+    font-size: 20px;
+    margin-right: 900px;
+    margin-top: 20px;
+}
+
+/* *********************A section about the college-end****************** */
+
+.images__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f3F3F3;
+    padding: 3rem 2rem;
+    position: relative;
+}
+.images__section_body img{
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+}
+.images__section_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.images__section_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.images__section_body img {
+    margin: 0 10px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.images__section_body img:nth-last-of-type(1){
+   transform: translateX(20rem);
+}
+.images__section_body img:nth-last-of-type(2){
+    transform: translateX(40rem);
+}
+.images__section_body img:nth-last-of-type(3){
+    transform: translateX(60rem);
+}
+.images__section_body img:nth-last-of-type(4){
+    transform: translateX(80rem);
+}
+.images__section_body img:nth-last-of-type(5){
+    transform: translateX(100rem);
+}
+.images__section_body .images.active {
+    transform: translateX(60rem);
+    transition: transform 1s ease;
+}
+.images__section_body .images.inactive {
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+
+.images__section_head p {
+    color: rgb(97, 94, 94);
+}
+.images__section_points {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images__section_points .point {
+    background-color: gray;
+    margin: 0 0.4rem;
+    padding: 3px;
+    border-radius: 50%;
+}
+.images__section_points .point.active {
+    background-color: #000;
+}
+.images__section .line-middle {
+    height: 0.5px;
+    width: 2.5rem;
+    background-color:#000;
+    margin-bottom: 2rem;
+}
+.images__section .fa-arrow-right,.images__section .fa-arrow-left {
+   cursor: pointer;
+   position: absolute;
+   z-index: 1;
+   top: 60%;
+   background-color: rgba(0,0,0,0.3);
+   border-radius: 50%;
+   padding: 10px;
+}
+.images__section .fa-arrow-left {
+    left: 2rem;
+
+}
+.images__section .fa-arrow-right {
+    right: 2rem;
+}
+
+
+/* ************************A section Events-start************************/
+
+.Events{
+    width: 100%;
+    height: 420px;
+    background-color: #225a9f;
+    position: relative;
+}
+
+.Events h4{
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.box{
+    width: 65px;
+    height: 65px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 42%;
+    right: 32%;
+    opacity: .5;
+}
+
+.box:hover{
+    opacity: 1;
+}
+
+.box::before{
+    content: '';
+    width: 25px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 32px;
+    right: 53px;
+}
+
+.box::after{
+    content: '30';
+    font-size: 32px;
+    color: #fff;
+    position: absolute;
+    top: 3px;
+    right: 16px;
+    opacity: .3;
+}
+
+.Events span{
+    color: #727272;
+    font-size: 14px;
+    position: absolute;
+    top: 110%;
+    right: 18%;
+}
+
+.Events__Events--a{
+    border: 1px solid #ffffff56;
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    top: 25%;
+    right: 55%;
+}
+
+.Events__Opening--a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    right: 40%;
+}
+
+.Events p{
+    font-size: 15px;
+    color: #ffffff93;
+    position: absolute;
+    top: 53%;
+    right: 40%;
+}
+
+.Events__a--arrow-left{
+    text-decoration: none;
+    font-size: 12px;
+    color: #ffffffbb;
+    position: absolute;
+    top: 65%;
+    right: 40%;
+}
+
+.Events__video{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* ************************A section Events-end****************************/
+
+/* ************************A section Alumni-start************************ */
+
+.Alumni{
+    text-align: center;
+}
+
+.Alumni__header{
+    position: relative;
+}
+
+.Alumni__header h3{
+    font-size: 23px;
+    padding-top: 40px;
+}
+
+.Alumni__header p{
+    font-size: 15px;
+    color: #797979ce
+}
+
+.Alumni__header::after{
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #474747;
+    position: absolute;
+    top:150px;
+    right: 48.5%;
+}
+
+.Alumni__card{
+    display: flex;
+    margin-top: 50px;
+}
+
+.card{
+    width: 31%;
+    height: 17em;
+    margin: 2%;
+}
+
+.card i{
+    font-size: 3.3em;
+    color: #a9d0e2;
+    padding: 15px;
+    display: block;
+}
+
+.card a{
+    font-size: 23px;
+    text-decoration: none;
+    color: #2471a4;
+    font-weight: 700;
+    padding: 15px;
+}
+.card p{
+    color: #797979ce;
+    padding: 10px 5px ;
+}
+
+.Alumni__link{
+    background-color:#63c1ec ;
+    padding: 5px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.College-and-Society__header h3{
+    margin-top: 50px;
+    font-size: 23px;
+}
+
+.College-and-Society__header p{
+    font-size: 15px;
+    color: #797979ce
+}
+
+/* ************************A section Alumni-end************************ */
+
+/********************************FOOTER********************************/
+
+.footer {
+width: 100%;
+height: 440px;
+background-color: #253d5f;
+display: flex;
+position: relative;
+}
+
+.footer__right{
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    width: 33%;
+    text-align: center;
+    background: url("image/footer_right_bg.png") ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.footer__right h4, .footer__right p, .footer__right div {
+    z-index: 100;
+}
+
+.footer__right::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #272525da;
+}
+
+.footer__right:hover {
+    background: #1a1919c0;
+}
+
+.footer__right-logo img {
+    width: 115px;
+    padding-top: 20px;
+}
+
+.footer__right h4{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+}
+
+.footer__right p{
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 20PX;
+}
+
+.footer__right small{
+    color: #fff;
+}
+
+.gold-text {
+    color: #e4b955;
+}
+
+.footer__left {
+    display: flex;
+    justify-content: space-around;
+    width:67%;
+}
+
+.footer__left_fast-links, .footer__left-links, .footer__left-contact {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.footer__left  h4 {
+    padding-top: 50px;
+    padding-bottom: 12px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer__left li {
+    padding-top: 5px;
+}
+
+.footer__left-contact li {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon a{
+    display: inline-block;
+    width: 30px;
+    font-size: 14px;
+    margin: 2px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.icon-1{
+    background-color:#3b5998 ;
+}
+.icon-2{
+    background-color:#1da1f2 ;
+}
+.icon-3{
+    background-color:#dd4b39 ;
+}
+.icon-4{
+    background-color: #0077b5;
+}
+.icon-5{
+    background-color: #ea4c89;
+}
+
+
+
+
+
